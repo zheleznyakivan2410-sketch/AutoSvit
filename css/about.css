@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
     .developer-content {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 }
 

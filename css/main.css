@@ -447,6 +447,13 @@ h1 {
     /* Прибираємо зміну кольору, додаємо збільшення */
     transform: translateY(-50%) scale(1.1);
 }
+
+/* Адаптація стрілок для мобільних пристроїв */
+@media (max-width: 768px) {
+    .reviews-slider-container .owl-nav {
+        display: none;
+    }
+}
 /* --- Футер --- */
 .site-footer {
     background-color: #0d1b2a;

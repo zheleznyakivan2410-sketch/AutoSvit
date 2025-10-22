@@ -241,6 +241,10 @@
     width: 100%;
 }
 
+@media (max-width: 576px) {
+    .form-row { flex-direction: column; }
+}
+
 .form-row input,
 .form-row select {
     width: 100%;
