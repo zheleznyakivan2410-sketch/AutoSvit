@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоСвіт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ласкаво просимо в АвтоСвіт!</h1>
+            <p>Ваш надійний партнер у світі автомобілів. Ми пропонуємо найкращі авто та якісні послуги.</p>
+            <p class="hero-subtext">Автомобіль мрії чекає на вас тут!</p>
+        </div>
+    </section>
+
+    <main class="site-main">
+        <div class="container">
+            <h2 class="section-title">Чому обирають АвтоСвіт?</h2>
+            <div class="advantages-list">
+                <div class="advantage-item">
+                    <img src="img/icon-car.gif" alt="" class="advantage-icon">
+                    <p>"АвтоСвіт" є офіційним представником найпрестижніших автомобільних брендів світу. Ми пропонуємо вам вибір з моделей, що вражають естетикою та технічною вдосконаленістю.</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="img/icon-car.gif" alt="" class="advantage-icon">
+                    <p>Ми готові поділитися глибоким знанням про автомобільну індустрію, щоб допомогти вам знайти ідеальне авто, яке відповідає вашим потребам і бажанням.</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="img/icon-car.gif" alt="" class="advantage-icon">
+                    <p>Кожен автомобіль проходить повну технічну діагностику. Також надаємо юридичну гарантію та гарантію на основні вузли автомобіля.</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="img/icon-car.gif" alt="" class="advantage-icon">
+                    <p>Надаємо багато додаткових послуг, про які ви можете дізнатись <a href="services.html" class="highlight-link">тут</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="offers-section">
+        <div class="container">
+            <h2 class="section-title">Найкращі пропозиції</h2>
+            <div class="offers-grid">
+                <!-- Картка 1 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Porsche Taycan</h4><p class="offer-price"><strong>95000$</strong></p></div>
+                    <img src="img/katalog/katalog_porsche.jpg" alt="Porsche Taycan" class="offer-image">
+                    <div class="offer-details">
+                        <p>Рік: 2021</p>
+                        <p>Пробіг: 20 000 км</p>
+                        <p>Тип кузова: Седан</p>
+                        <p>Об'єм двигуна: Електро</p>
+                    </div>
+                </div>
+                <!-- Картка 2 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Land Rover Defender</h4><p class="offer-price"><strong>75000$</strong></p></div>
+                    <img src="img/katalog/katalog_land_rover.jpg" alt="Land Rover Defender" class="offer-image">
+                    <div class="offer-details">
+                        <p>Рік: 2022</p>
+                        <p>Пробіг: 25 000 км</p>
+                        <p>Тип кузова: Позашляховик</p>
+                        <p>Об'єм двигуна: 3.0 л</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Chevrolet Camaro</h4><p class="offer-price"><strong>33000$</strong></p></div>
+                    <img src="img/katalog/katalog_chevrolet_camaro.jpg" alt="Chevrolet Camaro" class="offer-image">
+                    <div class="offer-details">
+                        <p>Рік: 2018</p><p>Пробіг: 50 000 км</p><p>Тип кузова: Купе</p><p>Об'єм двигуна: 3.6 л</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Toyota RAV4</h4><p class="offer-price"><strong>29500$</strong></p></div>
+                    <img src="img/katalog/katalog_toyota_rav4.jpg" alt="Toyota RAV4" class="offer-image">
+                    <div class="offer-details">
+                        <p>Рік: 2020</p><p>Пробіг: 45 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.5 л</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="cars.html" class="btn-view-more">Переглянути більше пропозицій</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Поради для вибору автомобіля</h2>
+            <div class="video-wrapper">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/d4K-eXSRJXc?si=w0Xc7f4xDdTuj3jW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Відгуки наших клієнтів</h2>
+            <div class="reviews-slider-container">
+                <!-- Slider main container -->
+                <div class="swiper reviews-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <p class="review-author">Олена Петренко</p>
+                                <div class="review-rating">★★★★★</div>
+                                <p class="review-text">"Чудовий сервіс! Допомогли знайти ідеальний автомобіль для моєї сім'ї. Дуже задоволена покупкою."</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <p class="review-author">Максим Ковальчук</p>
+                                <div class="review-rating">★★★★★</div>
+                                <p class="review-text">"Професіонали своєї справи. Все пройшло швидко, прозоро та без зайвих турбот. Рекомендую!"</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <p class="review-author">Ірина Шевченко</p>
+                                <div class="review-rating">★★★★☆</div>
+                                <p class="review-text">"Гарний вибір автомобілів та приємні ціни. Консультанти ввічливі, але хотілося б трохи більше технічних деталей."</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <p class="review-author">Андрій Бондаренко</p>
+                                <div class="review-rating">★★★★★</div>
+                                <p class="review-text">"Купував тут своє перше авто. Дуже вдячний за терпіння та поради. Все на найвищому рівні!"</p>
+                            </div>
+                        </div>
+                        <!-- Додайте ще 5 відгуків аналогічно -->
+                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Наталія Іванова</p><div class="review-rating">★★★★★</div><p class="review-text">"Найкращий автосалон у Львові! Обов'язково повернуся за наступним авто."</p></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Сергій Мельник</p><div class="review-rating">★★★★★</div><p class="review-text">"Юридичний супровід угоди та гарантія на авто - це те, що переконало мене зробити вибір на користь АвтоСвіт."</p></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Вікторія Сидоренко</p><div class="review-rating">★★★★☆</div><p class="review-text">"Все добре, але процес оформлення документів зайняв трохи більше часу, ніж очікувалося."</p></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Олег Лисенко</p><div class="review-rating">★★★★★</div><p class="review-text">"Вражений якістю передпродажної підготовки автомобіля. Машина як нова!"</p></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Юлія Кравченко</p><div class="review-rating">★★★★★</div><p class="review-text">"Дякую за допомогу у виборі та чудову каву! Ви найкращі!"</p></div></div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+                <p class="footer-tagline">Ваш надійний партнер при виборі автомобіля</p>
+                <img src="img/car-svgrepo.svg" alt="Car icon" class="footer-svg-car">
+                <p class="copyright">&copy; 2024 АвтоСвіт. Всі права захищено.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навігація</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p><strong>Графік роботи:</strong><br>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 17:00</p>
+                <p><strong>Телефон:</strong><br><a href="tel:+380685591756">+380685591756</a><br><a href="tel:+380683118879">+380683118879</a></p>
+                <div class="social-icons">
+                    <a href="https://t.me/xcvbn_msmc" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/_zheleznyak.i?igsh=MTEwbWtud2loNm1neg%3D%3D&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/17uKT5xCRu/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2366.607243797899!2d23.99587901642502!3d49.83493525974074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add81371c01f9%3A0xd5d3c8c644e90dea!2z0LLRg9C70LjRhtGPINCT0L7RgNC-0LTQvtGG0YzQutCwLCAxNzMsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1761031794028!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="map-address"><strong>Адреса:</strong><br>м. Львів, вул. Городоцька, 173</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scrollTopBtn" class="scroll-top-btn">▲</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

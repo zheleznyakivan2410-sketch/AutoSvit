@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги - АвтоСвіт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <h1>Купуйте авто легко та без турбот</h1>
+
+            <!-- Блок з картками послуг -->
+            <section class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Кредит та Лізинг</h3>
+                    <p>Допоможемо отримати фінансування на авто на найвигідніших умовах. Рішення від банків-партнерів за годину.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <h3>Trade-In</h3>
+                    <p>Обміняйте свій старий автомобіль на новий з нашого каталогу, доплативши лише різницю у вартості.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Автопідбір "під ключ"</h3>
+                    <p>Знайдемо, перевіримо та доставимо автомобіль вашої мрії за вашими параметрами, навіть якщо його немає в наявності.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Страхування</h3>
+                    <p>Оформлюйте поліси ОСАЦВ та КАСКО прямо в салоні та виїжджайте на вже застрахованому авто.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Технічна перевірка</h3>
+                    <p>Проведемо повну діагностику обраного вами авто, щоб ви були впевнені у його технічному стані.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Супровід реєстрації</h3>
+                    <p>Наш менеджер візьме на себе всю паперову рутину та допоможе швидко переоформити авто в Сервісному Центрі МВС.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Детейлінг</h3>
+                    <p>Замовте хімчистку салону, полірування кузова чи нанесення захисних покриттів, щоб ваше авто сяяло.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Доставка авто</h3>
+                    <p>Придбали автомобіль? Ми безпечно доставимо його в будь-яке місто України.</p>
+                </div>
+            </section>
+
+            <!-- Блок "Як це працює?" -->
+            <section class="how-it-works">
+                <h2 class="section-title">Як це працює?</h2>
+                <div class="steps-slider-container">
+                    <div class="swiper steps-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Слайд 1: Trade-In -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Trade-In: обмін вашого авто</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Залишаєте заявку на оцінку вашого авто.</li>
+                                        <li><span>Крок 2:</span> Наші фахівці проводять безкоштовну діагностику та називають фінальну вартість.</li>
+                                        <li><span>Крок 3:</span> Обираєте будь-який автомобіль з нашого каталогу.</li>
+                                        <li><span>Крок 4:</span> Підписуємо договір, ви доплачуєте різницю і їдете на новому авто.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 2: Автопідбір -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Автопідбір "під ключ"</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Обговорюємо ваші побажання: марка, модель, бюджет.</li>
+                                        <li><span>Крок 2:</span> Шукаємо найкращі варіанти на ринку та надаємо вам звіти.</li>
+                                        <li><span>Крок 3:</span> Проводимо повну технічну та юридичну перевірку обраного авто.</li>
+                                        <li><span>Крок 4:</span> Оформлюємо угоду та доставляємо автомобіль вам.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 3: Кредитування -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Кредитування та Лізинг</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Ви обираєте авто, а ми подаємо запит у банки-партнери.</li>
+                                        <li><span>Крок 2:</span> Отримуємо вигідні пропозиції протягом години.</li>
+                                        <li><span>Крок 3:</span> Допомагаємо зібрати мінімальний пакет документів.</li>
+                                        <li><span>Крок 4:</span> Підписуєте договір і одразу їдете на власному авто.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                             <!-- Слайд 4: Страхування -->
+                             <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Страхування на місці</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Консультуємо та допомагаємо обрати оптимальний поліс.</li>
+                                        <li><span>Крок 2:</span> Розраховуємо вартість у кількох страхових компаніях.</li>
+                                        <li><span>Крок 3:</span> Оформлюємо поліс КАСКО або ОСАЦВ за 15 хвилин.</li>
+                                        <li><span>Крок 4:</span> Виїжджаєте з салону з повним страховим захистом.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 5: Технічна перевірка -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Технічна перевірка авто</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Записуєтесь на діагностику у зручний для вас час.</li>
+                                        <li><span>Крок 2:</span> Наші майстри проводять перевірку по 100+ пунктах: двигун, ходова, електроніка.</li>
+                                        <li><span>Крок 3:</span> Ви отримуєте детальний звіт про стан автомобіля та рекомендації.</li>
+                                        <li><span>Крок 4:</span> Приймаєте зважене рішення про покупку, маючи повну інформацію.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 6: Супровід реєстрації -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Супровід при реєстрації</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Ми готуємо повний пакет документів для Сервісного Центру.</li>
+                                        <li><span>Крок 2:</span> Наш менеджер супроводжує вас на всіх етапах процедури.</li>
+                                        <li><span>Крок 3:</span> Допомагаємо пройти експертний огляд та оплатити збори.</li>
+                                        <li><span>Крок 4:</span> Ви отримуєте нові номерні знаки та техпаспорт без черг і стресу.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 7: Детейлінг -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Детейлінг та підготовка</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Обираєте комплекс послуг: хімчистка, полірування, кераміка.</li>
+                                        <li><span>Крок 2:</span> Наші фахівці ретельно працюють над кожною деталлю вашого авто.</li>
+                                        <li><span>Крок 3:</span> Використовуємо лише професійні та безпечні матеріали.</li>
+                                        <li><span>Крок 4:</span> Забираєте автомобіль, який виглядає як новий та захищений надовго.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Слайд 8: Доставка авто -->
+                            <div class="swiper-slide">
+                                <div class="steps-block">
+                                    <h3>Доставка авто по Україні</h3>
+                                    <ol>
+                                        <li><span>Крок 1:</span> Ви обираєте автомобіль та укладаєте договір купівлі-продажу.</li>
+                                        <li><span>Крок 2:</span> Ми погоджуємо з вами адресу, зручну дату та час доставки.</li>
+                                        <li><span>Крок 3:</span> Наш водій-експерт або спеціалізований автовоз безпечно транспортує ваше авто.</li>
+                                        <li><span>Крок 4:</span> Ви приймаєте автомобіль у своєму місті та підписуєте акт прийому-передачі.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки навігації -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+
+            <!-- Блок довіри -->
+            <section class="trust-block">
+                <h2 class="section-title">Чому варто замовити послуги у нас?</h2>
+                <ul>
+                    <li>✅ <strong>Економія вашого часу:</strong> Беремо на себе всю рутину.</li>
+                    <li>✅ <strong>Прозорі умови:</strong> Жодних прихованих комісій та платежів.</li>
+                    <li>✅ <strong>Команда професіоналів:</strong> Досвідчені менеджери та механіки.</li>
+                    <li>✅ <strong>Гарантія результату:</strong> Працюємо офіційно за договором.</li>
+                </ul>
+            </section>
+
+            <!-- Блок FAQ -->
+            <section class="faq-section">
+                <h2 class="section-title">Часті запитання (FAQ)</h2>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary>Які документи потрібні для кредиту?</summary>
+                        <p>Зазвичай для оформлення кредиту потрібен мінімальний пакет документів: паспорт громадянина України, ідентифікаційний код (ІПН) та довідка про доходи за останні 6 місяців. Умови можуть відрізнятися залежно від банку-партнера.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Як формується ціна на моє авто при Trade-In?</summary>
+                        <p>Ціна формується на основі комплексної діагностики, ринкової вартості аналогічних моделей, року випуску, пробігу та загального технічного й візуального стану вашого автомобіля. Ми пропонуємо чесну та прозору оцінку.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Скільки часу займає реєстрація авто?</summary>
+                        <p>Завдяки нашій послузі супроводу, процес реєстрації в Сервісному Центрі МВС зазвичай займає не більше 1-2 годин. Ми беремо на себе всю підготовку документів, щоб мінімізувати ваш час очікування.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Чи надаєте ви гарантію на вживані автомобілі?</summary>
+                        <p>Так, ми впевнені в якості наших авто. На більшість автомобілів з пробігом ми надаємо гарантію на основні вузли та агрегати (двигун, коробка передач) терміном до 1 року або 15 000 км пробігу. Детальні умови гарантії можна уточнити у нашого менеджера.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Чи можу я замовити автопідбір, якщо я з іншого міста?</summary>
+                        <p>Звісно! Наша послуга "Автопідбір під ключ" працює по всій Україні. Ми знайдемо автомобіль за вашими параметрами, проведемо повну перевірку, а після узгодження доставимо його прямо до вашого міста. Весь процес можна контролювати дистанційно.</p>
+                    </details>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="forms-container">
+                <!-- Форма консультації -->
+                <div class="form-wrapper">
+                    <h3 class="form-title">Маєте запитання?</h3>
+                    <p class="form-subtitle">Наш експерт безкоштовно вас проконсультує протягом 15 хвилин!</p>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Ваше ім'я" required>
+                            <input type="text" placeholder="Ваше прізвище" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Ваш номер телефону" required>
+                            <select required>
+                                <option value="" disabled selected>Оберіть послугу...</option>
+                                <option value="credit">Кредит та Лізинг</option><option value="trade-in">Trade-In</option><option value="autopodbor">Автопідбір "під ключ"</option><option value="insurance">Страхування</option><option value="tech-check">Технічна перевірка</option><option value="registration">Супровід реєстрації</option><option value="detailing">Детейлінг</option><option value="delivery">Доставка авто</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="form-submit-btn">Отримати консультацію</button>
+                    </form>
+                </div>
+                <!-- Форма відгуку -->
+                <div class="form-wrapper">
+                    <h3 class="form-title">Залиште свій відгук</h3>
+                    <p class="form-subtitle">Поділіться своїми враженнями про роботу з нами!</p>
+                    <form class="review-form">
+                        <input type="text" placeholder="Ваше ім'я та прізвище" required>
+                        <div class="star-rating">
+                            <input type="radio" id="5-stars" name="rating" value="5" /><label for="5-stars">★</label>
+                            <input type="radio" id="4-stars" name="rating" value="4" /><label for="4-stars">★</label>
+                            <input type="radio" id="3-stars" name="rating" value="3" /><label for="3-stars">★</label>
+                            <input type="radio" id="2-stars" name="rating" value="2" /><label for="2-stars">★</label>
+                            <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star">★</label>
+                        </div>
+                        <textarea placeholder="Ваш відгук..." rows="4" required></textarea>
+                        <button type="submit" class="form-submit-btn">Надіслати відгук</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+                <p class="footer-tagline">Ваш надійний партнер при виборі автомобіля</p>
+                <img src="img/car-svgrepo.svg" alt="Car icon" class="footer-svg-car">
+                <p class="copyright">&copy; 2024 АвтоСвіт. Всі права захищено.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навігація</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p><strong>Графік роботи:</strong><br>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 17:00</p>
+                <p><strong>Телефон:</strong><br><a href="tel:+380685591756">+380685591756</a><br><a href="tel:+380683118879">+380683118879</a></p>
+                <div class="social-icons">
+                    <a href="https://t.me/xcvbn_msmc" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/_zheleznyak.i?igsh=MTEwbWtud2loNm1neg%3D%3D&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/17uKT5xCRu/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2366.607243797899!2d23.99587901642502!3d49.83493525974074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add81371c01f9%3A0xd5d3c8c644e90dea!2z0LLRg9C70LjRhtGPINCT0L7RgNC-0LTQvtGG0YzQutCwLCAxNzMsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1761031794028!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="map-address"><strong>Адреса:</strong><br>м. Львів, вул. Городоцька, 173</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scrollTopBtn" class="scroll-top-btn">▲</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
