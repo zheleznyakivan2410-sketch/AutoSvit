@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобілі - АвтоСвіт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="page-intro">
+                <div class="page-intro-text">
+                    <h1>Наші автомобілі</h1>
+                    <p>Тут ви можете переглянути повний каталог автомобілів, доступних для продажу. Використовуйте фільтри для пошуку ідеального авто.</p>
+                </div>
+                <div class="currency-converter-wrapper">
+                    <p>Тут ви можете перевести валюту в гривні</p>
+                    <!-- Currency Converter Script - FxExchangeRate.com  --><div style="width:248px;height:auto;border:1px solid #4A90E2;text-align:center;font-size:16px;font-family:sans-serif,Arial,Helvetica;border-top-right-radius:5px; border-top-left-radius:5px;background-color:#F0F0F0;"><div style="width:100%; height:2.2rem;padding:5px 0px 0px 0px;background-color:#4F1477;font-weight:bold;"><a rel="nofollow" style="color:#4A90E2;text-decoration:none;" href="https://www.fxexchangerate.com/">Currency Converter</a></div><script type="text/javascript" src="https://w.fxexchangerate.com/converter.php?fm=USD&ft=UAH&lg=en&am=1&ty=1"></script></div><!--  End of Currency Converter Script -  FxExchangeRate.com -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="filters-section">
+        <div class="container">
+            <form class="filters-form">
+                <div class="filter-group price-group">
+                    <label for="price-from">Ціна ($)</label>
+                    <input type="number" id="price-from" name="price-from" placeholder="від">
+                    <span>-</span>
+                    <input type="number" id="price-to" name="price-to" placeholder="до">
+                </div>
+                <div class="filter-group">
+                    <label for="year">Рік від</label>
+                    <select id="year" name="year">
+                        <option value="">Будь-який</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-filter">Застосувати</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="offers-section">
+        <div class="container">
+            <div class="offers-grid catalog-grid">
+                <!-- Ряд 1 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Alfa Romeo Stelvio</h4><p class="offer-price"><strong>34500$</strong></p></div>
+                    <img src="img/katalog_alfa_romeo.jpg" alt="Alfa Romeo Stelvio" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 68 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Chevrolet Bolt EV</h4><p class="offer-price"><strong>21000$</strong></p></div>
+                    <img src="img/katalog_chevrolet.jpg" alt="Chevrolet Bolt EV" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 45 000 км</p><p>Тип кузова: Хетчбек</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Chevrolet Camaro</h4><p class="offer-price"><strong>33000$</strong></p></div>
+                    <img src="img/katalog_chevrolet_camaro.jpg" alt="Chevrolet Camaro" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2018</p><p>Пробіг: 50 000 км</p><p>Тип кузова: Купе</p><p>Об'єм двигуна: 3.6 л</p></div>
+                </div>
+                <!-- Ряд 2 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Dodge Challenger</h4><p class="offer-price"><strong>37000$</strong></p></div>
+                    <img src="img/katalog_dodge.jpg" alt="Dodge Challenger" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 48 000 км</p><p>Тип кузова: Купе</p><p>Об'єм двигуна: 5.7 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Fisker Ocean</h4><p class="offer-price"><strong>55000$</strong></p></div>
+                    <img src="img/katalog_fisker.jpg" alt="Fisker Ocean" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2023</p><p>Пробіг: 5 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Ford Explorer</h4><p class="offer-price"><strong>39500$</strong></p></div>
+                    <img src="img/katalog_ford_explorer.jpg" alt="Ford Explorer" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 60 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 2.3 л</p></div>
+                </div>
+                <!-- Ряд 3 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Honda CR-V</h4><p class="offer-price"><strong>26000$</strong></p></div>
+                    <img src="img/katalog_honda.jpg" alt="Honda CR-V" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 60 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 1.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Land Rover Defender</h4><p class="offer-price"><strong>75000$</strong></p></div>
+                    <img src="img/katalog_land_rover.jpg" alt="Land Rover Defender" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2022</p><p>Пробіг: 25 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 3.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Nissan Ariya</h4><p class="offer-price"><strong>43000$</strong></p></div>
+                    <img src="img/katalog_nissan.jpg" alt="Nissan Ariya" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2022</p><p>Пробіг: 15 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <!-- Ряд 4 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Nissan Leaf</h4><p class="offer-price"><strong>18000$</strong></p></div>
+                    <img src="img/katalog_nissan_leaf.jpg" alt="Nissan Leaf" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 55 000 км</p><p>Тип кузова: Хетчбек</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Porsche Taycan</h4><p class="offer-price"><strong>95000$</strong></p></div>
+                    <img src="img/katalog_porsche.jpg" alt="Porsche Taycan" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2021</p><p>Пробіг: 20 000 км</p><p>Тип кузова: Седан</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">RAM 1500 TRX</h4><p class="offer-price"><strong>89000$</strong></p></div>
+                    <img src="img/katalog_RAM_TRX.jpg" alt="RAM 1500 TRX" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2022</p><p>Пробіг: 18 000 км</p><p>Тип кузова: Пікап</p><p>Об'єм двигуна: 6.2 л</p></div>
+                </div>
+                <!-- Ряд 5 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Toyota Tundra</h4><p class="offer-price"><strong>58000$</strong></p></div>
+                    <img src="img/katalog_toyota.jpg" alt="Toyota Tundra" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2021</p><p>Пробіг: 30 000 км</p><p>Тип кузова: Пікап</p><p>Об'єм двигуна: 3.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Volvo XC60</h4><p class="offer-price"><strong>32000$</strong></p></div>
+                    <img src="img/katalog_volvo.jpg" alt="Volvo XC60" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 77 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Volvo C40 Recharge</h4><p class="offer-price"><strong>48000$</strong></p></div>
+                    <img src="img/katalog_volvo_plus.jpg" alt="Volvo C40 Recharge" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2022</p><p>Пробіг: 12 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: Електро</p></div>
+                </div>
+                <!-- Ряд 6 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Nissan Rogue</h4><p class="offer-price"><strong>20500$</strong></p></div>
+                    <img src="img/katalog_nissan_rogue.jpg" alt="Nissan Rogue" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 82 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Toyota RAV4</h4><p class="offer-price"><strong>29500$</strong></p></div>
+                    <img src="img/katalog_toyota_rav4.jpg" alt="Toyota RAV4" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 45 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Mercedes-Benz CLA</h4><p class="offer-price"><strong>31500$</strong></p></div>
+                    <img src="img/katalog_mercedesbenz_cla.jpg" alt="Mercedes-Benz CLA" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 65 000 км</p><p>Тип кузова: Седан</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <!-- Ряд 7 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Mercedes-Benz GLE</h4><p class="offer-price"><strong>46000$</strong></p></div>
+                    <img src="img/katalog_mercedesbenz_gle.jpg" alt="Tesla Model 3" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 55 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 3.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Cadillac Escalade</h4><p class="offer-price"><strong>85000$</strong></p></div>
+                    <img src="img/katalog_cadillac.jpg" alt="Audi A6" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2021</p><p>Пробіг: 30 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 6.2 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Acura RDX</h4><p class="offer-price"><strong>31000$</strong></p></div>
+                    <img src="img/katalog_acura.jpg" alt="BMW 3 Series" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 48 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <!-- Ряд 8 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Jeep Wagoneer</h4><p class="offer-price"><strong>62000$</strong></p></div>
+                    <img src="img/katalog_jeep.jpg" alt="Jeep Wrangler" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2022</p><p>Пробіг: 25 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 5.7 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Honda Pilot</h4><p class="offer-price"><strong>33500$</strong></p></div>
+                    <img src="img/katalog_honda_pilot.jpg" alt="Ford Mustang" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 50 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 3.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Mercedes-Benz C300</h4><p class="offer-price"><strong>32500$</strong></p></div>
+                    <img src="img/katalog_mercedesbenz_c300.jpg" alt="Hyundai Ioniq 5" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 68 000 км</p><p>Тип кузова: Седан</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <!-- Ряд 9 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Ford Fusion</h4><p class="offer-price"><strong>15500$</strong></p></div>
+                    <img src="img/katalog_ford_fusion.jpg" alt="Mazda CX-5" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 90 000 км</p><p>Тип кузова: Седан</p><p>Об'єм двигуна: 2.5 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">BMW X5</h4><p class="offer-price"><strong>43000$</strong></p></div>
+                    <img src="img/katalog_bmw_x5.jpg" alt="Subaru Outback" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 72 000 км</p><p>Тип кузова: Позашляховик</p><p>Об'єм двигуна: 3.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Audi Q5</h4><p class="offer-price"><strong>36500$</strong></p></div>
+                    <img src="img/katalog_audi_q5.jpg" alt="Volkswagen Golf" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 55 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <!-- Ряд 10 -->
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">BMW 430xi Gran Coupe</h4><p class="offer-price"><strong>29000$</strong></p></div>
+                    <img src="img/katalog_bmw_430xi.jpg" alt="Lexus ES" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2018</p><p>Пробіг: 80 000 км</p><p>Тип кузова: Ліфтбек</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">BMW X1</h4><p class="offer-price"><strong>24500$</strong></p></div>
+                    <img src="img/katalog_bmw_x1.jpg" alt="Acura MDX" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2019</p><p>Пробіг: 75 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content"><h4 class="offer-brand">Audi Q3</h4><p class="offer-price"><strong>27000$</strong></p></div>
+                    <img src="img/katalog_audi_q3.jpg" alt="Mercedes-Benz C-Class" class="offer-image">
+                    <div class="offer-details"><p>Рік: 2020</p><p>Пробіг: 45 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.0 л</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип АвтоСвіт" class="logo-image">
+                    АвтоСвіт
+                </a>
+                <p class="footer-tagline">Ваш надійний партнер при виборі автомобіля</p>
+                <p class="copyright">&copy; 2024 АвтоСвіт. Всі права захищено.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навігація</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="cars.html">Автомобілі</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p><strong>Графік роботи:</strong><br>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 17:00</p>
+                <p><strong>Телефон:</strong><br><a href="tel:+380685591756">+380685591756</a><br><a href="tel:+380683118879">+380683118879</a></p>
+            </div>
+            <div class="footer-col footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2366.607243797899!2d23.99587901642502!3d49.83493525974074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add81371c01f9%3A0xd5d3c8c644e90dea!2z0LLRg9C70LjRhtGPINCT0L7RgNC-0LTQvtGG0YzQutCwLCAxNzMsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1761031794028!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="map-address"><strong>Адреса:</strong><br>м. Львів, вул. Городоцька, 173</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scrollTopBtn" class="scroll-top-btn">▲</a>
+
+    <!-- Скрипти для сторінки Автомобілі -->
+    <script src="js/main.js"></script>
+    <script src="js/cars.js"></script>
+</body>
+</html>
