@@ -162,6 +162,13 @@ h1 {
     margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        /* Вимикаємо ефект паралаксу на мобільних для кращої продуктивності */
+        background-attachment: scroll;
+    }
+}
+
 /* --- Стилі секцій --- */
 .section-title {
     text-align: center;
@@ -376,7 +383,7 @@ h1 {
 
 .reviews-slider-container {
     position: relative;
-    padding: 0 60px; /* Збільшуємо місце для стрілок */
+    padding: 0; /* Прибираємо відступи, щоб стрілки можна було винести за межі */
 }
 
 .review-card {
@@ -408,18 +415,38 @@ h1 {
     margin: 0;
 }
 
-/* Стилізація стрілок слайдера */
-.swiper-button-next, .swiper-button-prev {
-    color: #4A90E2; /* Робимо стрілки синіми, щоб їх було видно на світлому фоні */
-    top: 50%;
-    z-index: 10; /* Гарантуємо, що стрілки будуть поверх інших елементів */
-    transition: transform 0.3s ease; /* Додаємо плавну анімацію */
+/* Стилізація стрілок для Owl Carousel в секції відгуків */
+.reviews-slider-container .owl-nav button.owl-prev,
+.reviews-slider-container .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 50px; /* Задаємо ширину */
+    height: 50px; /* Задаємо висоту */
+    font-size: 1.5rem; /* Оптимальний розмір іконки для кола */
+    color: #ffffff; /* Білий колір іконки */
+    background: #4A90E2 !important; /* Завжди синій фон (з пріоритетом) */
+    border-radius: 50%; /* Робимо фон круглим */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Плавна анімація збільшення */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Додаємо тінь для об'єму */
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
-    transform: scale(1.2); /* Збільшуємо стрілку при наведенні */
+.reviews-slider-container .owl-nav button.owl-prev {
+    left: -60px; /* Виносимо за межі слайдера (вліво) */
 }
 
+.reviews-slider-container .owl-nav button.owl-next {
+    right: -60px; /* Виносимо за межі слайдера (вправо) */
+}
+
+.reviews-slider-container .owl-nav button.owl-prev:hover,
+.reviews-slider-container .owl-nav button.owl-next:hover {
+    /* Прибираємо зміну кольору, додаємо збільшення */
+    transform: translateY(-50%) scale(1.1);
+}
 /* --- Футер --- */
 .site-footer {
     background-color: #0d1b2a;
@@ -535,33 +562,4 @@ h1 {
 
 .map-address {
     margin-top: 15px;
-}
-
-/* --- Кнопка "Вгору" --- */
-.scroll-top-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: #4A90E2;
-    color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    text-decoration: none;
-    z-index: 100;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.scroll-top-btn.show {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.scroll-top-btn:hover {
-    transform: scale(1.1);
 }

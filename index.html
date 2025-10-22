@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" href="css/lib/owl.theme.default.css">
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
@@ -128,50 +129,42 @@
         <div class="container">
             <h2 class="section-title">Відгуки наших клієнтів</h2>
             <div class="reviews-slider-container">
-                <!-- Slider main container -->
-                <div class="swiper reviews-slider">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <p class="review-author">Олена Петренко</p>
-                                <div class="review-rating">★★★★★</div>
-                                <p class="review-text">"Чудовий сервіс! Допомогли знайти ідеальний автомобіль для моєї сім'ї. Дуже задоволена покупкою."</p>
-                            </div>
+                <div class="owl-carousel owl-theme reviews-slider">
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Олена Петренко</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Чудовий сервіс! Допомогли знайти ідеальний автомобіль для моєї сім'ї. Дуже задоволена покупкою."</p>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <p class="review-author">Максим Ковальчук</p>
-                                <div class="review-rating">★★★★★</div>
-                                <p class="review-text">"Професіонали своєї справи. Все пройшло швидко, прозоро та без зайвих турбот. Рекомендую!"</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <p class="review-author">Ірина Шевченко</p>
-                                <div class="review-rating">★★★★☆</div>
-                                <p class="review-text">"Гарний вибір автомобілів та приємні ціни. Консультанти ввічливі, але хотілося б трохи більше технічних деталей."</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <p class="review-author">Андрій Бондаренко</p>
-                                <div class="review-rating">★★★★★</div>
-                                <p class="review-text">"Купував тут своє перше авто. Дуже вдячний за терпіння та поради. Все на найвищому рівні!"</p>
-                            </div>
-                        </div>
-                        <!-- Додайте ще 5 відгуків аналогічно -->
-                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Наталія Іванова</p><div class="review-rating">★★★★★</div><p class="review-text">"Найкращий автосалон у Львові! Обов'язково повернуся за наступним авто."</p></div></div>
-                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Сергій Мельник</p><div class="review-rating">★★★★★</div><p class="review-text">"Юридичний супровід угоди та гарантія на авто - це те, що переконало мене зробити вибір на користь АвтоСвіт."</p></div></div>
-                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Вікторія Сидоренко</p><div class="review-rating">★★★★☆</div><p class="review-text">"Все добре, але процес оформлення документів зайняв трохи більше часу, ніж очікувалося."</p></div></div>
-                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Олег Лисенко</p><div class="review-rating">★★★★★</div><p class="review-text">"Вражений якістю передпродажної підготовки автомобіля. Машина як нова!"</p></div></div>
-                        <div class="swiper-slide"><div class="review-card"><p class="review-author">Юлія Кравченко</p><div class="review-rating">★★★★★</div><p class="review-text">"Дякую за допомогу у виборі та чудову каву! Ви найкращі!"</p></div></div>
                     </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Максим Ковальчук</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Професіонали своєї справи. Все пройшло швидко, прозоро та без зайвих турбот. Рекомендую!"</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Ірина Шевченко</p>
+                            <div class="review-rating">★★★★☆</div>
+                            <p class="review-text">"Гарний вибір автомобілів та приємні ціни. Консультанти ввічливі, але хотілося б трохи більше технічних деталей."</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Андрій Бондаренко</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Купував тут своє перше авто. Дуже вдячний за терпіння та поради. Все на найвищому рівні!"</p>
+                        </div>
+                    </div>
+                    <!-- Додайте ще 5 відгуків аналогічно -->
+                    <div class="slide-item"><div class="review-card"><p class="review-author">Наталія Іванова</p><div class="review-rating">★★★★★</div><p class="review-text">"Найкращий автосалон у Львові! Обов'язково повернуся за наступним авто."</p></div></div>
+                    <div class="slide-item"><div class="review-card"><p class="review-author">Сергій Мельник</p><div class="review-rating">★★★★★</div><p class="review-text">"Юридичний супровід угоди та гарантія на авто - це те, що переконало мене зробити вибір на користь АвтоСвіт."</p></div></div>
+                    <div class="slide-item"><div class="review-card"><p class="review-author">Вікторія Сидоренко</p><div class="review-rating">★★★★☆</div><p class="review-text">"Все добре, але процес оформлення документів зайняв трохи більше часу, ніж очікувалося."</p></div></div>
+                    <div class="slide-item"><div class="review-card"><p class="review-author">Олег Лисенко</p><div class="review-rating">★★★★★</div><p class="review-text">"Вражений якістю передпродажної підготовки автомобіля. Машина як нова!"</p></div></div>
+                    <div class="slide-item"><div class="review-card"><p class="review-author">Юлія Кравченко</p><div class="review-rating">★★★★★</div><p class="review-text">"Дякую за допомогу у виборі та чудову каву! Ви найкращі!"</p></div></div>
                 </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -213,9 +206,8 @@
         </div>
     </footer>
 
-    <a href="#" id="scrollTopBtn" class="scroll-top-btn">▲</a>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/lib/jquery-3.7.1.min.js"></script>
+    <script src="js/lib/owl.carousel.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

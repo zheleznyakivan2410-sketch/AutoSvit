@@ -53,19 +53,47 @@
 
 .steps-slider-container {
     position: relative;
-    padding: 0 40px;
+    padding: 0; /* Owl Carousel сам керує відступами */
 }
 
-.steps-slider .swiper-button-prev,
-.steps-slider .swiper-button-next {
-    color: #0d1b2a;
+/* Стилізація стрілок для Owl Carousel в секції кроків */
+.steps-slider .owl-nav button.owl-prev,
+.steps-slider .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 45px; /* Зменшуємо ширину */
+    height: 45px; /* Зменшуємо висоту */
+    font-size: 1.3rem; /* Зменшуємо іконку */
+    color: #ffffff; /* Білий колір іконки */
+    background: #4A90E2 !important; /* Завжди синій фон (з пріоритетом) */
+    border-radius: 50%; /* Робимо фон круглим */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Плавна анімація збільшення */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Додаємо тінь для об'єму */
 }
 
-.steps-slider .swiper-button-prev {
-    left: 0;
+.steps-slider .owl-nav button.owl-prev {
+    left: -25px; /* Посуваємо ближче до слайдера */
 }
-.steps-slider .swiper-button-next {
-    right: 0;
+
+.steps-slider .owl-nav button.owl-next {
+    right: -25px; /* Посуваємо ближче до слайдера */
+}
+
+.steps-slider .owl-nav button.owl-prev:hover,
+.steps-slider .owl-nav button.owl-next:hover {
+    /* Прибираємо зміну кольору, додаємо збільшення */
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Адаптація стрілок для мобільних пристроїв */
+@media (max-width: 768px) {
+    .steps-slider .owl-nav {
+        display: none; /* Приховуємо стрілки на мобільних */
+    }
 }
 
 .steps-block h3 {
