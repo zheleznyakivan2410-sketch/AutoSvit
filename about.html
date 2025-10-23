@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про нас - АвтоСвіт</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
@@ -14,6 +12,7 @@
 </head>
 <body>
 
+    <!-- ==================== ШАПКА САЙТУ ==================== -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -22,6 +21,7 @@
                     АвтоСвіт
                 </a>
             </div>
+            <!-- Основна навігація сайту -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Головна</a></li>
@@ -30,6 +30,7 @@
                     <li><a href="about.html">Про нас</a></li>
                 </ul>
             </nav>
+            <!-- Кнопка для мобільного меню (бургер) -->
             <button class="hamburger-menu">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times"></i>
@@ -37,13 +38,18 @@
         </div>
     </header>
 
+    <!-- ==================== ОСНОВНИЙ КОНТЕНТ СТОРІНКИ ==================== -->
     <main class="site-main">
         <div class="container">
+
+            <!-- --- Вступна секція --- -->
             <h1>Про компанію "АвтоСвіт"</h1>
             <p class="about-intro"><strong>"АвтоСвіт"</strong> – це не просто автосалон. Це команда ентузіастів, об'єднаних любов'ю до автомобілів та бажанням зробити процес покупки авто максимально простим, прозорим і приємним для кожного клієнта. Ми віримо, що автомобіль – це більше, ніж засіб пересування. Це свобода, комфорт та втілення мрії.</p>
 
+            <!-- --- Секція "Наша філософія" --- -->
             <section class="about-section philosophy-section">
                 <h2 class="section-title">Наша філософія</h2>
+                <!-- Grid-контейнер для елементів філософії -->
                 <div class="philosophy-grid">
                     <div class="philosophy-item">
                         <div class="philosophy-icon"><i class="fas fa-eye"></i></div>
@@ -63,26 +69,31 @@
                 </div>
             </section>
 
+            <!-- --- Секція "Наша команда" --- -->
             <section class="about-section">
                 <h2 class="section-title">Наша команда</h2>
                 <p>За кожною успішною угодою стоять наші професіонали: досвідчені менеджери, кваліфіковані механіки та уважні консультанти. Ми постійно вчимося та вдосконалюємось, щоб бути в курсі останніх тенденцій автомобільного ринку та пропонувати вам лише найкраще. Ми пишаємося тим, що можемо поділитися своїми знаннями та допомогти вам зробити правильний вибір.</p>
                 <p class="text-center"><strong>Приїжджайте до нас в гості, і переконайтеся в цьому самі!</strong></p>
             </section>
 
+            <!-- --- Секція про розробника сайту --- -->
             <section class="about-section developer-section">
                 <h2 class="section-title">За лаштунками сайту</h2>
+                <!-- Flex-контейнер для фото та інформації про розробника -->
                 <div class="developer-content">
                     <img src="img/designer.jpg" alt="Фото розробника" class="developer-photo">
                     <div class="developer-info">
                         <h3>Іван Желєзняк, веб-розробник</h3>
                         <p>Привіт! Я — Іван, студент, який створив цей сайт. Для мене це не просто навчальний проєкт, а можливість втілити свою пристрасть до чистого коду та зручного дизайну. Працюючи над "АвтоСвіт", я прагнув створити не просто веб-сторінку, а інтуїтивно зрозумілий та приємний у використанні інструмент для кожного, хто шукає автомобіль своєї мрії.</p>
                         <p>Сподіваюся, вам сподобається результат моєї роботи!</p>
+                    </div>
                 </div>
             </section>
 
         </div>
     </main>
 
+    <!-- ==================== ПІДВАЛ САЙТУ ==================== -->
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-col footer-about">
@@ -120,7 +131,9 @@
         </div>
     </footer>
 
+    <!-- Підключення скриптів -->
     <script src="js/lib/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

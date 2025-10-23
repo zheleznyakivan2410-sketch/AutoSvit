@@ -1,8 +1,8 @@
-/* Стилі для вступної секції */
+/* --- Вступна секція --- */
 .page-intro {
     display: flex;
-    justify-content: space-between; /* Розміщує текст зліва, а блок керування справа */
-    align-items: flex-start; /* Вирівнюємо по верхньому краю */
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 30px;
     margin-bottom: 20px;
 }
@@ -20,22 +20,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0; /* Забороняємо блоку стискатися */
+    flex-shrink: 0;
 }
 
 @media (max-width: 992px) {
     .page-intro {
         flex-direction: column;
-        align-items: stretch; /* Розтягуємо елементи на всю ширину */
+        align-items: stretch;
     }
 }
 
+/* --- Форма фільтрів --- */
 .filters-form {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     gap: 20px;
-    margin-top: 40px; /* Збільшуємо відступ від тексту */
+    margin-top: 40px;
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
@@ -50,7 +51,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 5px;
-    color: #333; /* Змінюємо колір тексту на темний */
+    color: #333;
 }
 
 .filter-group select,
@@ -77,13 +78,13 @@
 }
 
 .price-group span {
-    padding-bottom: 10px; /* Вирівнюємо тире з інпутами */
+    padding-bottom: 10px;
 }
 
 .filter-buttons {
     display: flex;
     gap: 10px;
-    margin-left: auto; /* Притискає кнопки до правого краю */
+    margin-left: auto;
 }
 
 .btn-filter {
@@ -103,23 +104,22 @@
 }
 
 .btn-reset {
-    /* Стилі кнопки "Скинути" тепер відповідають кнопці "Застосувати" */
-    padding: 10px 25px; /* Зберігаємо той самий відступ */
-    background-color: #4A90E2; /* Той самий колір фону */
-    color: #ffffff; /* Той самий колір тексту */
-    border: none; /* Прибираємо рамку */
-    border-radius: 5px; /* Той самий радіус */
-    font-size: 1rem; /* Той самий розмір шрифту */
-    font-weight: 700; /* Той самий жирний шрифт */
-    cursor: pointer; /* Курсор-вказівник */
-    transition: background-color 0.3s ease; /* Плавний перехід кольору */
+    padding: 10px 25px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-reset:hover {
-    background-color: #0056b3; /* Той самий колір при наведенні */
+    background-color: #0056b3;
 }
 
-/* Стилі для картки товару в каталозі */
+/* --- Сітка каталогу --- */
 .offer-brand {
     font-size: 1.2rem;
     font-weight: 700;
@@ -127,12 +127,11 @@
     margin: 0 0 5px;
 }
 
-/* Сітка для сторінки каталогу */
 .catalog-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
-/* Стилі для секції з SVG анімацією */
+/* --- Секція з SVG анімацією --- */
 .svg-animation-section {
     padding: 20px 0;
     background-color: #4f1477;

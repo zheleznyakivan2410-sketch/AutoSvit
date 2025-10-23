@@ -1,4 +1,3 @@
-/* --- СТИЛІ ДЛЯ СТОРІНКИ "ПРО НАС" --- */
 .about-intro {
     font-size: 1.2rem;
     text-align: center;
@@ -35,7 +34,6 @@
     margin-bottom: 15px;
 }
 
-/* --- СТИЛІ ДЛЯ БЛОКУ РОЗРОБНИКА --- */
 .developer-section {
     margin-top: 60px;
     padding-top: 40px;

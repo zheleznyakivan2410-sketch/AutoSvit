@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АвтоСвіт</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/lib/owl.carousel.css">
     <link rel="stylesheet" href="css/lib/owl.theme.default.css">
+
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
 
+    <!-- ==================== ШАПКА САЙТУ ==================== -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -23,6 +24,7 @@
                     АвтоСвіт
                 </a>
             </div>
+            <!-- Основна навігація сайту -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Головна</a></li>
@@ -31,6 +33,7 @@
                     <li><a href="about.html">Про нас</a></li>
                 </ul>
             </nav>
+            <!-- Кнопка для мобільного меню (бургер) -->
             <button class="hamburger-menu">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times"></i>
@@ -38,6 +41,7 @@
         </div>
     </header>
 
+    <!-- ==================== ГОЛОВНИЙ ЕКРАН ==================== -->
     <section class="hero">
         <div class="hero-content">
             <h1>Ласкаво просимо в АвтоСвіт!</h1>
@@ -46,8 +50,10 @@
         </div>
     </section>
 
+    <!-- ==================== ОСНОВНИЙ КОНТЕНТ СТОРІНКИ ==================== -->
     <main class="site-main">
         <div class="container">
+            <!-- --- Секція "Чому обирають АвтоСвіт?" --- -->
             <h2 class="section-title">Чому обирають АвтоСвіт?</h2>
             <div class="advantages-list">
                 <div class="advantage-item">
@@ -70,6 +76,7 @@
         </div>
     </main>
 
+    <!-- ==================== СЕКЦІЯ "НАЙКРАЩІ ПРОПОЗИЦІЇ" ==================== -->
     <section class="offers-section">
         <div class="container">
             <h2 class="section-title">Найкращі пропозиції</h2>
@@ -100,34 +107,46 @@
                     <div class="offer-content"><h4 class="offer-brand">Chevrolet Camaro</h4><p class="offer-price"><strong>33000$</strong></p></div>
                     <img src="img/katalog/katalog_chevrolet_camaro.jpg" alt="Chevrolet Camaro" class="offer-image">
                     <div class="offer-details">
-                        <p>Рік: 2018</p><p>Пробіг: 50 000 км</p><p>Тип кузова: Купе</p><p>Об'єм двигуна: 3.6 л</p>
+                        <p>Рік: 2018</p>
+                        <p>Пробіг: 50 000 км</p>
+                        <p>Тип кузова: Купе</p>
+                        <p>Об'єм двигуна: 3.6 л</p>
                     </div>
                 </div>
                 <div class="offer-card">
                     <div class="offer-content"><h4 class="offer-brand">Toyota RAV4</h4><p class="offer-price"><strong>29500$</strong></p></div>
                     <img src="img/katalog/katalog_toyota_rav4.jpg" alt="Toyota RAV4" class="offer-image">
                     <div class="offer-details">
-                        <p>Рік: 2020</p><p>Пробіг: 45 000 км</p><p>Тип кузова: Кросовер</p><p>Об'єм двигуна: 2.5 л</p>
+                        <p>Рік: 2020</p>
+                        <p>Пробіг: 45 000 км</p>
+                        <p>Тип кузова: Кросовер</p>
+                        <p>Об'єм двигуна: 2.5 л</p>
                     </div>
                 </div>
             </div>
+            <!-- Кнопка для переходу до повного каталогу -->
             <div class="text-center">
                 <a href="cars.html" class="btn-view-more">Переглянути більше пропозицій</a>
             </div>
         </div>
     </section>
 
+    <!-- ==================== СЕКЦІЯ З ВІДЕО ==================== -->
     <section class="video-section">
         <div class="container">
             <h2 class="section-title">Поради для вибору автомобіля</h2>
+            <!-- Обгортка для адаптивного відео -->
             <div class="video-wrapper">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/d4K-eXSRJXc?si=w0Xc7f4xDdTuj3jW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d4K-eXSRJXc?si=w0Xc7f4xDdTuj3jW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
+    <!-- ==================== СЕКЦІЯ ВІДГУКІВ ==================== -->
     <section class="reviews-section">
         <div class="container">
             <h2 class="section-title">Відгуки наших клієнтів</h2>
+            <!-- Контейнер для слайдера Owl Carousel -->
             <div class="reviews-slider-container">
                 <div class="owl-carousel owl-theme reviews-slider">
                     <div class="slide-item">
@@ -158,17 +177,47 @@
                             <p class="review-text">"Купував тут своє перше авто. Дуже вдячний за терпіння та поради. Все на найвищому рівні!"</p>
                         </div>
                     </div>
-                    <!-- Додайте ще 5 відгуків аналогічно -->
-                    <div class="slide-item"><div class="review-card"><p class="review-author">Наталія Іванова</p><div class="review-rating">★★★★★</div><p class="review-text">"Найкращий автосалон у Львові! Обов'язково повернуся за наступним авто."</p></div></div>
-                    <div class="slide-item"><div class="review-card"><p class="review-author">Сергій Мельник</p><div class="review-rating">★★★★★</div><p class="review-text">"Юридичний супровід угоди та гарантія на авто - це те, що переконало мене зробити вибір на користь АвтоСвіт."</p></div></div>
-                    <div class="slide-item"><div class="review-card"><p class="review-author">Вікторія Сидоренко</p><div class="review-rating">★★★★☆</div><p class="review-text">"Все добре, але процес оформлення документів зайняв трохи більше часу, ніж очікувалося."</p></div></div>
-                    <div class="slide-item"><div class="review-card"><p class="review-author">Олег Лисенко</p><div class="review-rating">★★★★★</div><p class="review-text">"Вражений якістю передпродажної підготовки автомобіля. Машина як нова!"</p></div></div>
-                    <div class="slide-item"><div class="review-card"><p class="review-author">Юлія Кравченко</p><div class="review-rating">★★★★★</div><p class="review-text">"Дякую за допомогу у виборі та чудову каву! Ви найкращі!"</p></div></div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Наталія Іванова</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Найкращий автосалон у Львові! Обов'язково повернуся за наступним авто."</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Сергій Мельник</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Юридичний супровід угоди та гарантія на авто - це те, що переконало мене зробити вибір на користь АвтоСвіт."</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Вікторія Сидоренко</p>
+                            <div class="review-rating">★★★★☆</div>
+                            <p class="review-text">"Все добре, але процес оформлення документів зайняв трохи більше часу, ніж очікувалося."</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Олег Лисенко</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Вражений якістю передпродажної підготовки автомобіля. Машина як нова!"</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="review-card">
+                            <p class="review-author">Юлія Кравченко</p>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">"Дякую за допомогу у виборі та чудову каву! Ви найкращі!"</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ==================== ПІДВАЛ САЙТУ ==================== -->
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-col footer-about">
@@ -206,8 +255,10 @@
         </div>
     </footer>
 
+    <!-- ==================== ПІДКЛЮЧЕННЯ СКРИПТІВ ==================== -->
     <script src="js/lib/jquery-3.7.1.min.js"></script>
     <script src="js/lib/owl.carousel.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

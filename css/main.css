@@ -2,8 +2,8 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #4f1477; /* Світло-сірий фон */
-    color: #333; /* Основний колір тексту (темно-сірий/чорний) */
+    background-color: #4f1477;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    color: #0d1b2a; /* Темно-синій для заголовків */
+    color: #0d1b2a;
 }
 
 /* --- Шапка сайту --- */
@@ -33,7 +33,7 @@ h1 {
 .logo-link {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #ffffff; /* Синій колір з логотипа */
+    color: #ffffff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ h1 {
 
 .main-nav a {
     text-decoration: none;
-    color: #ffffff; /* Синій колір з логотипа */
+    color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
     padding: 5px 10px;
@@ -68,11 +68,10 @@ h1 {
 }
 
 .main-nav a:hover {
-    color: #ffffff; /* Білий текст при наведенні */
-    background-color: #4A90E2; /* Синій фон при наведенні */
+    color: #ffffff;
+    background-color: #4A90E2;
 }
 
-/* --- Гамбургер-меню --- */
 .hamburger-menu {
     display: none; /* Приховано на десктопі */
     background: none;
@@ -82,6 +81,7 @@ h1 {
     cursor: pointer;
     z-index: 1001;
 }
+
 
 .hamburger-menu .fa-times {
     display: none;
@@ -164,47 +164,17 @@ h1 {
 
 @media (max-width: 768px) {
     .hero {
-        /* Вимикаємо ефект паралаксу на мобільних для кращої продуктивності */
         background-attachment: scroll;
     }
 }
 
-/* --- Стилі секцій --- */
+/* --- Основний контент та секції --- */
 .section-title {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.2rem;
 }
 
-/* --- Секція переваг --- */
-.advantage-item {
-    display: flex;
-    align-items: flex-start; /* Вирівнювання по верху */
-    margin-bottom: 1.5rem;
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.advantage-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.advantage-icon {
-    width: 28px; /* Маленький розмір іконки */
-    height: 28px;
-    margin-right: 15px;
-    flex-shrink: 0; /* Забороняємо іконці зменшуватись */
-    margin-top: 5px; /* Збільшений відступ зверху для кращого вирівнювання */
-    transition: transform 0.3s ease;
-}
-
-.advantage-icon:hover {
-    transform: scale(1.2);
-}
-
-/* --- Основний контент --- */
 .site-main {
     padding: 40px 0;
 }
@@ -220,21 +190,48 @@ h1 {
     margin-bottom: 1em;
 }
 
+/* --- Секція переваг --- */
+.advantage-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .highlight-link {
-    color: #4A90E2; /* Синій колір з логотипа */
+    color: #4A90E2;
     font-weight: 700;
-    font-size: 1.1em; /* Трохи більший розмір */
+    font-size: 1.1em;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* Потрібно для transform */
+    display: inline-block;
 }
 
 .highlight-link:hover {
-    color: #0056b3; /* Темніший синій при наведенні */
-    transform: scale(1.1); /* Ефект "збільшення" */
+    color: #0056b3;
+    transform: scale(1.1);
 }
 
-/* Допоміжний клас для центрування */
+.advantage-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    flex-shrink: 0;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.advantage-icon:hover {
+    transform: scale(1.2);
+}
+
 .text-center {
     text-align: center;
 }
@@ -252,7 +249,7 @@ h1 {
 
 .offers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивна сітка */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
@@ -268,14 +265,14 @@ h1 {
 .offer-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    overflow: visible; /* Дозволяємо контенту виходити за межі */
-    z-index: 10; /* Піднімаємо картку над іншими */
+    overflow: visible;
+    z-index: 10;
 }
 
 .offer-image {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Зображення заповнює блок без спотворень */
+    object-fit: cover;
     display: block;
 }
 
@@ -300,18 +297,18 @@ h1 {
 
 .offer-details {
     position: absolute;
-    top: 100%; /* Позиціонуємо одразу під карткою */
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #f2f0ff;
     color: #333;
     padding: 15px;
-    border-radius: 0 0 10px 10px; /* Заокруглюємо нижні кути */
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Ігноруємо кліки, поки блок прихований */
+    pointer-events: none;
 }
 
 .offer-card:hover .offer-details {
@@ -344,7 +341,7 @@ h1 {
     border-color: #4A90E2;
 }
 
-/* --- Секція відео --- */
+/* --- Секція з відео --- */
 .video-section {
     padding: 40px 0;
     background-color: #4f1477;
@@ -356,7 +353,7 @@ h1 {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Співвідношення сторін 16:9 */
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -374,7 +371,7 @@ h1 {
 /* --- Секція відгуків --- */
 .reviews-section {
     padding: 40px 0;
-    background-color: #4f1477; /* Повертаємо світло-сірий фон для контрасту */
+    background-color: #4f1477;
 }
 
 .reviews-section .section-title {
@@ -383,8 +380,7 @@ h1 {
 
 .reviews-slider-container {
     position: relative;
-    padding: 0; /* Прибираємо відступи, щоб стрілки можна було винести за межі */
-    overflow-x: hidden; /* Приховуємо горизонтальний скрол, викликаний стрілками */
+    padding: 0;
 }
 
 .review-card {
@@ -405,7 +401,7 @@ h1 {
 }
 
 .review-rating {
-    color: #ffc107; /* Золотий колір для зірочок */
+    color: #ffc107;
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
@@ -416,56 +412,54 @@ h1 {
     margin: 0;
 }
 
-/* Стилізація стрілок для Owl Carousel в секції відгуків */
+/* Стрілки для Owl Carousel */
 .reviews-slider-container .owl-nav button.owl-prev,
 .reviews-slider-container .owl-nav button.owl-next {
     position: absolute;
     top: 50%; 
     transform: translateY(-50%);
-    width: 50px; /* Задаємо ширину */
-    height: 50px; /* Задаємо висоту */
-    font-size: 1.5rem; /* Оптимальний розмір іконки для кола */
-    color: #ffffff; /* Білий колір іконки */
-    background: #4A90E2 !important; /* Завжди синій фон (з пріоритетом) */
-    border-radius: 50%; /* Робимо фон круглим */
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #4A90E2 !important;
+    border-radius: 50%;
     border: none;
     outline: none;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Плавна анімація збільшення */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Додаємо тінь для об'єму */
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .reviews-slider-container .owl-nav button.owl-prev {
-    left: -60px; /* Виносимо за межі слайдера (вліво) */
+    left: -60px;
 }
 
 .reviews-slider-container .owl-nav button.owl-next {
-    right: -60px; /* Виносимо за межі слайдера (вправо) */
+    right: -60px;
 }
 
 .reviews-slider-container .owl-nav button.owl-prev:hover,
 .reviews-slider-container .owl-nav button.owl-next:hover {
-    /* Прибираємо зміну кольору, додаємо збільшення */
     transform: translateY(-50%) scale(1.1);
 }
 
-/* Адаптація стрілок для мобільних пристроїв */
 @media (max-width: 768px) {
     .reviews-slider-container .owl-nav {
         display: none;
     }
 }
-/* --- Футер --- */
+
+/* --- Підвал (Footer) --- */
 .site-footer {
     background-color: #0d1b2a;
-    color: #e0e0e0; /* Світло-сірий текст у футері */
+    color: #e0e0e0;
     padding: 20px 0;
-    margin-top: 0; /* Прибираємо старий відступ */
+    margin-top: 0;
 }
 
 .footer-container {
     display: grid;
-    /* Змінюємо визначення колонок для кращого балансу */
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 30px;
 }
@@ -519,7 +513,6 @@ h1 {
     font-size: 0.9rem;
     color: #a0a0a0;
 }
-
 .social-icons {
     margin-top: 15px;
 }
@@ -548,6 +541,9 @@ h1 {
     padding: 0;
 }
 
+.footer-nav li {
+    margin-bottom: 10px;
+}
 .footer-nav a {
     color: #e0e0e0;
     text-decoration: none;
@@ -557,11 +553,6 @@ h1 {
 .footer-nav a:hover {
     color: #ffffff;
     padding-left: 5px;
-}
-
-.footer-col a {
-    color: #e0e0e0;
-    text-decoration: none;
 }
 
 .footer-map iframe {

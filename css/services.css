@@ -1,6 +1,4 @@
-/* Стилі для сторінки "Послуги" */
-
-/* Сітка з картками послуг */
+/* --- Секція з картками послуг --- */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -25,7 +23,7 @@
 .service-icon {
     font-size: 3rem;
     margin-bottom: 15px;
-    color: #4A90E2; /* Додаємо фірмовий колір */
+    color: #4A90E2;
 }
 
 .service-card h3 {
@@ -39,7 +37,7 @@
     line-height: 1.5;
 }
 
-/* Блок "Як це працює?" */
+/* --- Секція "Як це працює?" зі слайдером --- */
 .how-it-works {
     margin-top: 60px;
     padding: 40px 0;
@@ -53,47 +51,44 @@
 
 .steps-slider-container {
     position: relative;
-    padding: 0; /* Owl Carousel сам керує відступами */
-    overflow-x: hidden; /* Приховуємо горизонтальний скрол, викликаний стрілками */
+    padding: 0;
 }
 
-/* Стилізація стрілок для Owl Carousel в секції кроків */
+/* Стрілки для Owl Carousel */
 .steps-slider .owl-nav button.owl-prev,
 .steps-slider .owl-nav button.owl-next {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     transform: translateY(-50%);
-    width: 45px; /* Зменшуємо ширину */
-    height: 45px; /* Зменшуємо висоту */
-    font-size: 1.3rem; /* Зменшуємо іконку */
-    color: #ffffff; /* Білий колір іконки */
-    background: #4A90E2 !important; /* Завжди синій фон (з пріоритетом) */
-    border-radius: 50%; /* Робимо фон круглим */
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background: #4A90E2 !important; 
+    border-radius: 50%;
     border: none;
     outline: none;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Плавна анімація збільшення */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Додаємо тінь для об'єму */
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .steps-slider .owl-nav button.owl-prev {
-    left: -25px; /* Посуваємо ближче до слайдера */
+    left: -25px;
 }
 
 .steps-slider .owl-nav button.owl-next {
-    right: -25px; /* Посуваємо ближче до слайдера */
+    right: -25px;
 }
 
 .steps-slider .owl-nav button.owl-prev:hover,
 .steps-slider .owl-nav button.owl-next:hover {
-    /* Прибираємо зміну кольору, додаємо збільшення */
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.1); 
 }
 
-/* Адаптація стрілок для мобільних пристроїв */
 @media (max-width: 768px) {
     .steps-slider .owl-nav {
-        display: none; /* Приховуємо стрілки на мобільних */
+        display: none;
     }
 }
 
@@ -119,7 +114,7 @@
     font-weight: 700;
 }
 
-/* Блок довіри */
+/* --- Секція "Чому варто замовити..." --- */
 .trust-block {
     margin-top: 60px;
     text-align: center;
@@ -138,7 +133,7 @@
     margin-bottom: 15px;
 }
 
-/* Блок FAQ */
+/* --- Секція поширених запитань (FAQ) --- */
 .faq-section {
     margin-top: 60px;
     padding-bottom: 40px;
@@ -161,16 +156,16 @@
     font-size: 1.1rem;
     padding: 15px 20px;
     cursor: pointer;
-    list-style: none; /* Прибираємо стандартний маркер */
+    list-style: none;
     position: relative;
 }
 
 .faq-item summary::-webkit-details-marker {
-    display: none; /* Прибираємо стандартний маркер для Chrome/Safari */
+    display: none;
 }
 
 .faq-item summary::after {
-    content: '+'; /* Додаємо власний маркер */
+    content: '+';
     position: absolute;
     right: 20px;
     font-size: 1.5rem;
@@ -178,7 +173,7 @@
 }
 
 .faq-item[open] summary::after {
-    transform: rotate(45deg); /* Повертаємо плюсик, щоб він став схожим на хрестик */
+    transform: rotate(45deg);
 }
 
 .faq-item p {
@@ -188,7 +183,7 @@
     line-height: 1.6;
 }
 
-/* --- Секція форми зворотного зв'язку --- */
+/* --- Секція з формами зворотного зв'язку --- */
 .contact-form-section {
     margin-top: 60px;
     padding: 60px 0;
@@ -269,7 +264,7 @@
 }
 
 .contact-form select:required:invalid {
-    color: #555;
+    color: #555; 
 }
 
 .review-form textarea {
@@ -277,6 +272,7 @@
     resize: vertical;
 }
 
+/* --- Стилізація зіркового рейтингу --- */
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
