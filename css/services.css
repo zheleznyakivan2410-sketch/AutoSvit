@@ -54,6 +54,7 @@
 .steps-slider-container {
     position: relative;
     padding: 0; /* Owl Carousel сам керує відступами */
+    overflow-x: hidden; /* Приховуємо горизонтальний скрол, викликаний стрілками */
 }
 
 /* Стилізація стрілок для Owl Carousel в секції кроків */

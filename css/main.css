@@ -384,6 +384,7 @@ h1 {
 .reviews-slider-container {
     position: relative;
     padding: 0; /* Прибираємо відступи, щоб стрілки можна було винести за межі */
+    overflow-x: hidden; /* Приховуємо горизонтальний скрол, викликаний стрілками */
 }
 
 .review-card {
