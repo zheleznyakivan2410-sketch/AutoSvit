@@ -1,21 +1,27 @@
+/* Стиль для вступного параграфа на сторінці */
 .about-intro {
-    font-size: 1.2rem;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 40px;
     color: #555;
 }
 
+/* Загальний клас для секцій */
 .about-section {
     margin-bottom: 40px;
 }
 
+/* --- Секція "Наша філософія" --- */
+
+/* Grid-контейнер для елементів філософії */
 .philosophy-grid {
-    display: grid;
+    display: grid; /* Використання CSS Grid для розмітки */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 30px; /* Відстань між елементами сітки */
     text-align: center;
 }
 
+/* Стиль для окремого елемента (картки) в секції філософії */
 .philosophy-item {
     padding: 20px;
     border: 1px solid #e0e0e0;
@@ -23,29 +29,36 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ефект при наведенні курсора на картку */
 .philosophy-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* Стиль для іконки в картці філософії */
 .philosophy-icon {
-    font-size: 2.5rem;
+    font-size: 40px;
     color: #4A90E2;
     margin-bottom: 15px;
 }
 
+/* --- Секція про розробника --- */
+
+/* Стиль для контейнера секції розробника */
 .developer-section {
     margin-top: 60px;
     padding-top: 40px;
     border-top: 1px solid #e0e0e0;
 }
 
+/* Flex-контейнер для фото та інформації */
 .developer-content {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
+/* Адаптивність для екранів шириною до 768px */
 @media (max-width: 768px) {
     .developer-content {
         flex-direction: column;
@@ -53,6 +66,7 @@
     }
 }
 
+/* Стиль для фотографії розробника */
 .developer-photo {
     width: 250px;
     height: 250px;
@@ -60,6 +74,7 @@
     object-fit: cover;
 }
 
+/* Стиль для заголовка в блоці інформації про розробника */
 .developer-info h3 {
     margin-top: 0;
 }

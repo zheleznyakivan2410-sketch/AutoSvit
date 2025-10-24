@@ -1,4 +1,5 @@
 /* --- Секція з картками послуг --- */
+/* Grid-контейнер для карток послуг */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -6,6 +7,7 @@
     margin-top: 40px;
 }
 
+/* Стиль для окремої картки послуги */
 .service-card {
     background-color: #f2f0ff;
     padding: 25px;
@@ -15,25 +17,29 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ефект при наведенні курсора на картку */
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Стиль для іконки послуги */
 .service-icon {
-    font-size: 3rem;
+    font-size: 48px; /* 3rem */
     margin-bottom: 15px;
     color: #4A90E2;
 }
 
+/* Заголовок всередині картки */
 .service-card h3 {
     color: #0d1b2a;
     margin-bottom: 10px;
 }
 
+/* Опис послуги всередині картки */
 .service-card p {
     color: #555;
-    font-size: 0.95rem;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -45,16 +51,18 @@
     border-radius: 10px;
 }
 
+/* Заголовок секції */
 .how-it-works .section-title {
     margin-bottom: 40px;
 }
 
+/* Контейнер для слайдера */
 .steps-slider-container {
     position: relative;
     padding: 0;
 }
 
-/* Стрілки для Owl Carousel */
+/* Стилізація стрілок для Owl Carousel в секції кроків */
 .steps-slider .owl-nav button.owl-prev,
 .steps-slider .owl-nav button.owl-next {
     position: absolute;
@@ -62,7 +70,7 @@
     transform: translateY(-50%);
     width: 45px;
     height: 45px;
-    font-size: 1.3rem;
+    font-size: 21px;
     color: #ffffff;
     background: #4A90E2 !important; 
     border-radius: 50%;
@@ -73,43 +81,51 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* Позиціонування лівої стрілки */
 .steps-slider .owl-nav button.owl-prev {
     left: -25px;
 }
 
+/* Позиціонування правої стрілки */
 .steps-slider .owl-nav button.owl-next {
     right: -25px;
 }
 
+/* Ефект при наведенні на стрілки */
 .steps-slider .owl-nav button.owl-prev:hover,
 .steps-slider .owl-nav button.owl-next:hover {
     transform: translateY(-50%) scale(1.1); 
 }
 
+/* Адаптація стрілок для мобільних пристроїв */
 @media (max-width: 768px) {
     .steps-slider .owl-nav {
         display: none;
     }
 }
 
+/* Заголовок всередині слайду */
 .steps-block h3 {
     color: #0d1b2a;
     margin-bottom: 20px;
     text-align: center;
 }
 
+/* Нумерований список кроків */
 .steps-block ol {
     list-style: none;
     padding: 0;
     counter-reset: steps-counter;
 }
 
+/* Елемент списку кроків */
 .steps-block li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 15px;
 }
 
+/* Стиль для слова "Крок" */
 .steps-block li span {
     font-weight: 700;
 }
@@ -120,6 +136,7 @@
     text-align: center;
 }
 
+/* Список переваг */
 .trust-block ul {
     list-style: none;
     padding: 0;
@@ -128,9 +145,16 @@
     margin-top: 30px;
 }
 
+/* Елемент списку переваг */
 .trust-block li {
-    font-size: 1.1rem;
+    font-size: 18px;
     margin-bottom: 15px;
+}
+
+/* Стиль для іконки-галочки в секції переваг */
+.trust-block li .fa-check-circle {
+    color: #4A90E2;
+    margin-right: 8px;
 }
 
 /* --- Секція поширених запитань (FAQ) --- */
@@ -139,11 +163,13 @@
     padding-bottom: 40px;
 }
 
+/* Контейнер для всіх елементів FAQ */
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Окремий елемент FAQ (тег <details>) */
 .faq-item {
     background-color: #f2f0ff;
     border-radius: 8px;
@@ -151,31 +177,36 @@
     border: 1px solid #e0e0e0;
 }
 
+/* Заголовок питання (тег <summary>) */
 .faq-item summary {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 18px;
     padding: 15px 20px;
     cursor: pointer;
     list-style: none;
     position: relative;
 }
 
+/* Прибираємо стандартний маркер для Chrome/Safari */
 .faq-item summary::-webkit-details-marker {
     display: none;
 }
 
+/* Власний маркер (плюсик) */
 .faq-item summary::after {
     content: '+';
     position: absolute;
     right: 20px;
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform 0.2s ease;
 }
 
+/* Коли елемент <details> відкритий, обертаємо плюсик */
 .faq-item[open] summary::after {
     transform: rotate(45deg);
 }
 
+/* Текст відповіді, який з'являється при відкритті */
 .faq-item p {
     padding: 0 20px 15px;
     margin: 0;
@@ -191,12 +222,14 @@
     text-align: center;
 }
 
+/* Grid-контейнер для двох форм */
 .forms-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
+/* Адаптивність: на екранах до 992px форми стають одна під одною */
 @media (max-width: 992px) {
     .forms-container {
         grid-template-columns: 1fr;
@@ -209,20 +242,23 @@
     border-radius: 10px;
 }
 
+/* Заголовок форми */
 .form-title {
-    font-size: 1.8rem;
+    font-size: 29px;
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+/* Підзаголовок форми */
 .form-subtitle {
     color: #e0e0e0;
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
+/* Загальні стилі для обох форм */
 .contact-form,
 .review-form {
     display: flex;
@@ -231,18 +267,20 @@
     gap: 20px;
 }
 
+/* Рядок з кількома полями вводу */
 .form-row {
     display: flex;
     gap: 20px;
     width: 100%;
 }
 
+/* Адаптивність: на малих екранах поля стають в колонку */
 @media (max-width: 576px) {
     .form-row { flex-direction: column; }
 }
 
-.form-row input,
-.form-row select {
+/* Клас для полів, що мають займати всю ширину */
+.form-full-width {
     width: 100%;
 }
 
@@ -254,7 +292,7 @@
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -263,6 +301,7 @@
     color: #555;
 }
 
+/* Стиль для плейсхолдера в select */
 .contact-form select:required:invalid {
     color: #555; 
 }
@@ -273,6 +312,7 @@
 }
 
 /* --- Стилізація зіркового рейтингу --- */
+/* Контейнер для зірок */
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
@@ -280,36 +320,41 @@
     gap: 5px;
 }
 
+/* Приховую стандартні radio-кнопки */
 .star-rating input[type="radio"] {
     display: none;
 }
 
+/* Стилізую <label> (зірки) */
 .star-rating label {
-    font-size: 2.5rem;
+    font-size: 40px;
     color: #a0a0a0;
     cursor: pointer;
     transition: color 0.2s ease;
 }
 
+/* Підсвічую обрані зірки та зірки при наведенні */
 .star-rating input[type="radio"]:checked ~ label,
 .star-rating label:hover,
 .star-rating label:hover ~ label {
     color: #ffc107;
 }
 
+/* Кнопка відправки форми */
 .form-submit-btn {
     padding: 15px 30px;
     background-color: #4A90E2;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
 }
 
+/* Ефект при наведенні на кнопку */
 .form-submit-btn:hover {
     background-color: #0056b3;
 }

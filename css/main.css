@@ -7,12 +7,14 @@ body {
     line-height: 1.6;
 }
 
+/* Основний контейнер, що обмежує ширину контенту та центрує його */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* Стиль для головних заголовків */
 h1 {
     color: #0d1b2a;
 }
@@ -20,18 +22,20 @@ h1 {
 /* --- Шапка сайту --- */
 .site-header {
     background-color: #4f1477;
-    padding: 1rem 0;
+    padding: 16px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Flex-контейнер для вирівнювання логотипу та навігації */
 .site-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Стилі для логотипу */
 .logo-link {
-    font-size: 1.8rem;
+    font-size: 29px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -39,6 +43,7 @@ h1 {
     align-items: center;
 }
 
+/* Зображення логотипу */
 .logo-image {
     height: 50px;
     width: auto;
@@ -46,6 +51,7 @@ h1 {
 }
 
 /* --- Навігація --- */
+/* Список посилань */
 .main-nav ul {
     margin: 0;
     padding: 0;
@@ -53,6 +59,7 @@ h1 {
     display: flex;
 }
 
+/* Елемент списку */
 .main-nav li {
     margin-left: 25px;
 }
@@ -61,28 +68,30 @@ h1 {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 5px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Ефект при наведенні на посилання */
 .main-nav a:hover {
     color: #ffffff;
     background-color: #4A90E2;
 }
 
+/* --- Гамбургер-меню --- */
 .hamburger-menu {
     display: none; /* Приховано на десктопі */
     background: none;
     border: none;
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 29px;
     cursor: pointer;
     z-index: 1001;
 }
 
-
+/* Логіка для зміни іконки (хрестик/бургер) */
 .hamburger-menu .fa-times {
     display: none;
 }
@@ -96,11 +105,12 @@ h1 {
 }
 
 /* --- Адаптація для мобільних пристроїв --- */
+/* Правила, що застосовуються на екранах шириною до 768px */
 @media (max-width: 768px) {
     .main-nav {
         position: fixed;
         top: 0;
-        right: -100%; /* Початково сховано за екраном */
+        right: -100%;
         width: 280px;
         height: 100vh;
         background-color: #0d1b2a;
@@ -110,7 +120,7 @@ h1 {
     }
 
     .main-nav.active {
-        right: 0; /* Виїжджає при активації */
+        right: 0;
     }
 
     .main-nav ul {
@@ -124,7 +134,7 @@ h1 {
     }
 
     .hamburger-menu {
-        display: block; /* Показуємо гамбургер на мобільних */
+        display: block;
     }
 }
 
@@ -136,89 +146,99 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff; /* Білий колір тексту на банері */
-    /* Фонове зображення з напівпрозорим синім градієнтом */
+    color: #ffffff;
+    /* Фонове зображення з напівпрозорим градієнтом */
     background-image: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.8)), url('../img/herobg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Створює ефект паралаксу (зникання при скролі) */
+    background-attachment: fixed; /* Створює ефект зникання при скролі */
 }
 
+/* Контент всередині Hero-секції */
 .hero-content h1 {
     color: #ffffff;
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 56px;
+    margin-bottom: 8px;
 }
 
 .hero-content p {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+    font-size: 22px;
+    margin-bottom: 32px;
 }
 
 .hero-subtext {
-    font-size: 1.9rem;
+    font-size: 30px;
     font-weight: 700;
-    color: #ffffff; /* Білий колір */
-    margin-top: 1rem;
+    color: #ffffff;
+    margin-top: 16px;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        background-attachment: scroll;
-    }
-}
 
 /* --- Основний контент та секції --- */
+/* Загальний стиль для заголовків секцій */
 .section-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2.2rem;
+    font-size: 35px;
 }
 
+/* Основний білий блок контенту */
 .site-main {
     padding: 40px 0;
 }
 
 .site-main .container {
-    background-color:  #ffffff; /* Світло-фіолетовий фон */
+    background-color:  #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .site-main .container p {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
+}
+
+/* Адаптація основного контейнера для мобільних */
+@media (max-width: 768px) {
+    .site-main .container {
+        padding: 20px 15px; /* Зменшуємо бічні відступи на мобільних */
+    }
 }
 
 /* --- Секція переваг --- */
+/* Окремий елемент списку переваг */
 .advantage-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     padding: 10px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Стиль для виділених посилань */
 .highlight-link {
     color: #4A90E2;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block;
 }
 
+/* Ефект при наведенні на посилання */
 .highlight-link:hover {
     color: #0056b3;
     transform: scale(1.1);
 }
 
+/* Ефект при наведенні на блок переваги */
 .advantage-item:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Іконка переваги */
 .advantage-icon {
     width: 28px;
     height: 28px;
@@ -228,10 +248,12 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+/* Ефект при наведенні на іконку */
 .advantage-icon:hover {
     transform: scale(1.2);
 }
 
+/* Допоміжний клас для центрування тексту */
 .text-center {
     text-align: center;
 }
@@ -239,14 +261,16 @@ h1 {
 /* --- Секція пропозицій --- */
 .offers-section {
     padding: 10px 0;
-    background-color: #4f1477
+    background-color: #4f1477;
+    overflow: hidden; /* Запобігає горизонтальній прокрутці через елементи, що виходять за межі */
 }
 
 .offers-section .section-title {
     color: #ffffff;
-    font-size: 2.8rem;
+    font-size: 45px;
 }
 
+/* Сітка для карток пропозицій */
 .offers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -262,6 +286,7 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ефект при наведенні на картку */
 .offer-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -269,6 +294,7 @@ h1 {
     z-index: 10;
 }
 
+/* Зображення в картці */
 .offer-image {
     width: 100%;
     height: 200px;
@@ -276,25 +302,27 @@ h1 {
     display: block;
 }
 
+/* Контент в картці (назва, ціна) */
 .offer-content {
     padding: 15px;
     text-align: center;
 }
 
 .offer-price {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #0d1b2a;
     margin: 0;
 }
 
 .offer-brand {
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 700;
     color: #0d1b2a;
     margin: 0 0 5px;
     text-align: center;
 }
 
+/* Блок з деталями, що з'являється при наведенні */
 .offer-details {
     position: absolute;
     top: 100%;
@@ -311,6 +339,7 @@ h1 {
     pointer-events: none;
 }
 
+/* Показуємо деталі при наведенні на картку */
 .offer-card:hover .offer-details {
     opacity: 1;
     transform: translateY(0);
@@ -321,13 +350,14 @@ h1 {
     margin: 0 0 10px;
 }
 
+/* Кнопка "Переглянути більше" */
 .btn-view-more {
     display: inline-block;
     margin-top: 40px;
     padding: 15px 30px;
     background-color: transparent;
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
@@ -335,6 +365,7 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Ефект при наведенні на кнопку */
 .btn-view-more:hover {
     background-color: #4A90E2;
     color: #ffffff;
@@ -351,6 +382,7 @@ h1 {
     color: #ffffff;
 }
 
+/* Адаптивна обгортка для відео, що зберігає співвідношення сторін 16:9 */
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -360,6 +392,7 @@ h1 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Саме відео всередині обгортки */
 .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -378,11 +411,13 @@ h1 {
     color: #ffffff;
 }
 
+/* Контейнер для слайдера відгуків */
 .reviews-slider-container {
     position: relative;
     padding: 0;
 }
 
+/* Картка відгуку */
 .review-card {
     background-color: #ffffff;
     padding: 25px;
@@ -393,19 +428,22 @@ h1 {
     flex-direction: column;
 }
 
+/* Автор відгуку */
 .review-author {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 19px;
     color: #0d1b2a;
     margin: 0 0 5px;
 }
 
+/* Рейтинг (зірочки) */
 .review-rating {
     color: #ffc107;
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
+/* Текст відгуку */
 .review-text {
     font-style: italic;
     color: #555;
@@ -420,7 +458,7 @@ h1 {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #ffffff;
     background: #4A90E2 !important;
     border-radius: 50%;
@@ -431,19 +469,23 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* Позиціонування лівої стрілки */
 .reviews-slider-container .owl-nav button.owl-prev {
     left: -60px;
 }
 
+/* Позиціонування правої стрілки */
 .reviews-slider-container .owl-nav button.owl-next {
     right: -60px;
 }
 
+/* Ефект при наведенні на стрілки */
 .reviews-slider-container .owl-nav button.owl-prev:hover,
 .reviews-slider-container .owl-nav button.owl-next:hover {
     transform: translateY(-50%) scale(1.1);
 }
 
+/* Адаптація стрілок для мобільних пристроїв */
 @media (max-width: 768px) {
     .reviews-slider-container .owl-nav {
         display: none;
@@ -458,26 +500,30 @@ h1 {
     margin-top: 0;
 }
 
+/* Grid-контейнер для колонок підвалу */
 .footer-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 30px;
 }
 
+/* Адаптивність підвалу */
 @media (max-width: 992px) {
     .footer-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
+/* Заголовок колонки підвалу */
 .footer-col h4 {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 19px;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 10px;
 }
 
+/* Декоративне підкреслення заголовка */
 .footer-col h4::after {
     content: '';
     position: absolute;
@@ -488,35 +534,43 @@ h1 {
     width: 50px;
 }
 
+/* Параграфи в підвалі */
 .footer-col p {
     margin-bottom: 10px;
     line-height: 1.7;
 }
 
+/* Логотип в підвалі */
 .footer-about .logo-link {
     margin-bottom: 20px;
 }
 
+/* Слоган під логотипом */
 .footer-tagline {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #ffffff;
     margin-top: 0;
 }
 
+/* Декоративне SVG-зображення автомобіля */
 .footer-svg-car {
     width: 150px;
     margin: 10px 0;
     opacity: 0.7;
 }
 
+/* Текст копірайту */
 .copyright {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #a0a0a0;
 }
+
+/* Контейнер для іконок соцмереж */
 .social-icons {
     margin-top: 15px;
 }
 
+/* Стиль для іконок соціальних мереж */
 .social-icons a {
     display: inline-block;
     width: 40px;
@@ -527,15 +581,17 @@ h1 {
     text-align: center;
     line-height: 40px;
     margin-right: 10px;
-    font-size: 1.1rem;
+    font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Ефект при наведенні на іконку */
 .social-icons a:hover {
     background-color: #4A90E2;
     transform: translateY(-3px);
 }
 
+/* Навігація в підвалі */
 .footer-nav {
     list-style: none;
     padding: 0;
@@ -550,15 +606,18 @@ h1 {
     transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
+/* Ефект при наведенні на посилання в навігації */
 .footer-nav a:hover {
     color: #ffffff;
     padding-left: 5px;
 }
 
+/* Карта в підвалі */
 .footer-map iframe {
     border-radius: 8px;
 }
 
+/* Адреса під картою */
 .map-address {
     margin-top: 15px;
 }

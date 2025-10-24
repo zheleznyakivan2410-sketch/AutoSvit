@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Послуги - АвтоСвіт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
@@ -14,6 +15,7 @@
 </head>
 <body>
 
+    <!-- ==================== ШАПКА САЙТУ ==================== -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -22,6 +24,7 @@
                     АвтоСвіт
                 </a>
             </div>
+            <!-- Основна навігація сайту -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Головна</a></li>
@@ -30,6 +33,7 @@
                     <li><a href="about.html">Про нас</a></li>
                 </ul>
             </nav>
+            <!-- Кнопка для мобільного меню -->
             <button class="hamburger-menu">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times"></i>
@@ -37,11 +41,12 @@
         </div>
     </header>
 
+    <!-- ==================== ОСНОВНИЙ КОНТЕНТ СТОРІНКИ ==================== -->
     <main class="site-main">
         <div class="container">
             <h1>Купуйте авто легко та без турбот</h1>
 
-            <!-- Блок з картками послуг -->
+            <!-- --- Секція з картками послуг --- -->
             <section class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
@@ -85,9 +90,10 @@
                 </div>
             </section>
 
-            <!-- Блок "Як це працює?" -->
+            <!-- --- Секція "Як це працює?" зі слайдером --- -->
             <section class="how-it-works">
                 <h2 class="section-title">Як це працює?</h2>
+                <!-- Контейнер для слайдера Owl Carousel -->
                 <div class="steps-slider-container">
                     <div class="owl-carousel owl-theme steps-slider">
                         <!-- Слайд 1: Trade-In -->
@@ -190,18 +196,18 @@
                 </div>
             </section>
 
-            <!-- Блок довіри -->
+            <!-- --- Секція "Чому варто замовити послуги у нас?" --- -->
             <section class="trust-block">
                 <h2 class="section-title">Чому варто замовити послуги у нас?</h2>
                 <ul>
-                    <li>✅ <strong>Економія вашого часу:</strong> Беремо на себе всю рутину.</li>
-                    <li>✅ <strong>Прозорі умови:</strong> Жодних прихованих комісій та платежів.</li>
-                    <li>✅ <strong>Команда професіоналів:</strong> Досвідчені менеджери та механіки.</li>
-                    <li>✅ <strong>Гарантія результату:</strong> Працюємо офіційно за договором.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Економія вашого часу:</strong> Беремо на себе всю рутину.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Прозорі умови:</strong> Жодних прихованих комісій та платежів.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Команда професіоналів:</b> Досвідчені менеджери та механіки.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Гарантія результату:</strong> Працюємо офіційно за договором.</li>
                 </ul>
             </section>
 
-            <!-- Блок FAQ -->
+            <!-- --- Секція поширених запитань (FAQ) --- -->
             <section class="faq-section">
                 <h2 class="section-title">Часті запитання (FAQ)</h2>
                 <div class="faq-container">
@@ -231,10 +237,12 @@
         </div>
     </main>
 
+    <!-- ==================== СЕКЦІЯ З ФОРМАМИ ЗВОРОТНОГО ЗВ'ЯЗКУ ==================== -->
     <section class="contact-form-section">
         <div class="container">
             <div class="forms-container">
-                <!-- Форма консультації -->
+                
+                <!-- --- Форма для замовлення консультації --- -->
                 <div class="form-wrapper">
                     <h3 class="form-title">Маєте запитання?</h3>
                     <p class="form-subtitle">Наш експерт безкоштовно вас проконсультує протягом 15 хвилин!</p>
@@ -245,20 +253,29 @@
                         </div>
                         <div class="form-row">
                             <input type="tel" placeholder="Ваш номер телефону" required>
-                            <select required>
+                            <select required class="form-full-width">
                                 <option value="" disabled selected>Оберіть послугу...</option>
-                                <option value="credit">Кредит та Лізинг</option><option value="trade-in">Trade-In</option><option value="autopodbor">Автопідбір "під ключ"</option><option value="insurance">Страхування</option><option value="tech-check">Технічна перевірка</option><option value="registration">Супровід реєстрації</option><option value="detailing">Детейлінг</option><option value="delivery">Доставка авто</option>
+                                <option value="credit">Кредит та Лізинг</option>
+                                <option value="trade-in">Trade-In</option>
+                                <option value="autopodbor">Автопідбір "під ключ"</option>
+                                <option value="insurance">Страхування</option>
+                                <option value="tech-check">Технічна перевірка</option>
+                                <option value="registration">Супровід реєстрації</option>
+                                <option value="detailing">Детейлінг</option>
+                                <option value="delivery">Доставка авто</option>
                             </select>
                         </div>
                         <button type="submit" class="form-submit-btn">Отримати консультацію</button>
                     </form>
                 </div>
-                <!-- Форма відгуку -->
+
+                <!-- --- Форма для надсилання відгуку --- -->
                 <div class="form-wrapper">
                     <h3 class="form-title">Залиште свій відгук</h3>
                     <p class="form-subtitle">Поділіться своїми враженнями про роботу з нами!</p>
                     <form class="review-form">
                         <input type="text" placeholder="Ваше ім'я та прізвище" required>
+                        <!-- Рейтинг у вигляді зірочок на основі radio-кнопок -->
                         <div class="star-rating">
                             <input type="radio" id="5-stars" name="rating" value="5" /><label for="5-stars">★</label>
                             <input type="radio" id="4-stars" name="rating" value="4" /><label for="4-stars">★</label>
@@ -266,7 +283,7 @@
                             <input type="radio" id="2-stars" name="rating" value="2" /><label for="2-stars">★</label>
                             <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star">★</label>
                         </div>
-                        <textarea placeholder="Ваш відгук..." rows="4" required></textarea>
+                        <textarea placeholder="Ваш відгук..." rows="4" required class="form-full-width"></textarea>
                         <button type="submit" class="form-submit-btn">Надіслати відгук</button>
                     </form>
                 </div>
@@ -274,6 +291,7 @@
         </div>
     </section>
 
+    <!-- ==================== ПІДВАЛ САЙТУ ==================== -->
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-col footer-about">
@@ -297,7 +315,7 @@
             <div class="footer-col">
                 <h4>Контакти</h4>
                 <p><strong>Графік роботи:</strong><br>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 17:00</p>
-                <p><strong>Телефон:</strong><br><a href="tel:+380685591756">+380685591756</a><br><a href="tel:+380683118879">+380683118879</a></p>
+                <p><strong>Телефон:</strong><p>+380685591756</p><p>+380683118879</p></p>
                 <div class="social-icons">
                     <a href="https://t.me/xcvbn_msmc" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
                     <a href="https://www.instagram.com/_zheleznyak.i?igsh=MTEwbWtud2loNm1neg%3D%3D&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -311,6 +329,7 @@
         </div>
     </footer>
 
+    <!-- ==================== ПІДКЛЮЧЕННЯ СКРИПТІВ ==================== -->
     <script src="js/lib/jquery-3.7.1.min.js"></script>
     <script src="js/lib/owl.carousel.js"></script>
     <script src="js/main.js"></script>

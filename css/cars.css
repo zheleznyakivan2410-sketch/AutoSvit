@@ -7,6 +7,7 @@
     margin-bottom: 20px;
 }
 
+/* Ліва частина вступної секції (текст та фільтри) */
 .page-intro-text {
     flex-grow: 1;
 }
@@ -16,6 +17,7 @@
     margin-bottom: 15px;
 }
 
+/* Права частина вступної секції (конвертер валют) */
 .page-controls {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,7 @@
     flex-shrink: 0;
 }
 
+/* Адаптивність: на екранах до 992px блоки стають один під одним */
 @media (max-width: 992px) {
     .page-intro {
         flex-direction: column;
@@ -31,6 +34,7 @@
 }
 
 /* --- Форма фільтрів --- */
+/* Стиль для самої форми */
 .filters-form {
     display: flex;
     flex-wrap: wrap;
@@ -42,27 +46,31 @@
     border-radius: 8px;
 }
 
+/* Група елементів фільтра */
 .filter-group {
     display: flex;
     flex-direction: column;
 }
 
+/* Підпис до поля фільтра */
 .filter-group label {
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 5px;
     color: #333;
 }
 
+/* Загальні стилі для полів вводу та випадаючих списків */
 .filter-group select,
 .filter-group input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
+/* Окрема група для фільтрації за ціною */
 .price-group {
     flex-direction: row;
     align-items: flex-end;
@@ -77,10 +85,12 @@
     width: 100px;
 }
 
+/* Дефіс між полями ціни */
 .price-group span {
     padding-bottom: 10px;
 }
 
+/* Контейнер для кнопок "Застосувати" та "Скинути" */
 .filter-buttons {
     display: flex;
     gap: 10px;
@@ -93,7 +103,7 @@
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -109,7 +119,7 @@
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -120,13 +130,15 @@
 }
 
 /* --- Сітка каталогу --- */
+/* Заголовок (марка авто) в картці товару */
 .offer-brand {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 700;
     color: #0d1b2a;
     margin: 0 0 5px;
 }
 
+/* Сітка для сторінки каталогу */
 .catalog-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
