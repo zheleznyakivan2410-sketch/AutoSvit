@@ -353,7 +353,7 @@ h1 {
 /* Кнопка "Переглянути більше" */
 .btn-view-more {
     display: inline-block;
-    margin-top: 40px;
+    margin: 70px 0 50px;
     padding: 15px 30px;
     background-color: transparent;
     color: #ffffff;
